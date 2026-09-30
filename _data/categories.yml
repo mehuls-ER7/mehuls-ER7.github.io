@@ -1,0 +1,25 @@
+# To add a new category: add a block here AND add it to the dropdown in .pages.yml
+- slug: tech
+  name: Tech & Coding
+  emoji: "💻"
+  color: "#bfe9d6"
+- slug: language
+  name: Languages
+  emoji: "🗣️"
+  color: "#ffd3b8"
+- slug: exam
+  name: Exams
+  emoji: "📚"
+  color: "#d8d0ff"
+- slug: creative
+  name: Music & Art
+  emoji: "🎸"
+  color: "#ffe9a8"
+- slug: life
+  name: Life Skills
+  emoji: "⏱️"
+  color: "#c7dcff"
+- slug: general
+  name: General
+  emoji: "✨"
+  color: "#e3e8f3"
