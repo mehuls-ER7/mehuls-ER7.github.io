@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+<link rel="icon" href="{{ '/logo/logo-icon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="How to Learn - home">
+      <img class="logo-slot" src="{{ '/logo/logo-icon.svg' | relative_url }}" alt="How to Learn logo">
+      <span class="brand-text">
+        <span class="brand-name">How to Learn</span><br>
+        <span class="brand-domain">howtolearn.site</span>
+      </span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="{{ '/#posts' | relative_url }}">Latest guides</a></li>
+        <li><a href="{{ '/topics/' | relative_url }}">Topics</a></li>
+        <li><a href="{{ '/#about' | relative_url }}">About</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" href="{{ '/#subscribe' | relative_url }}">Get new guides</a>
+  </div>
+</header>
+
+<main>
+{{ content }}
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="year"></span> How to Learn · howtolearn.site</span>
+    <ul>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">YouTube</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
