@@ -4,6 +4,7 @@ description: Simple, step-by-step guides on how to learn anything.
 url: "https://howtolearn.site"
 baseurl: ""
 lang: en
+ga_id: G-D10S3ZDKRQ
 timezone: Asia/Kolkata
 permalink: /learn/:title/
 
@@ -24,3 +25,4 @@ defaults:
     values:
       layout: post
       category: general
+      
