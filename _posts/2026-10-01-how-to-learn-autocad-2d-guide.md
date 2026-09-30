@@ -69,10 +69,10 @@ For visual guidance and step-by-step walkthroughs, check out this comprehensive 
 **Q1: Can I learn AutoCAD 2D on my own without a course?**  
 Yes! Thousands of draftsmen are self taught. With free YouTube tutorials, Autodesk documentation, and daily practice, you can easily *learn AutoCAD 2D* on your own.
 
-**Q2: Is AutoCAD 2DD harder than 3D?**  
+**Q2: Is AutoCAD 2D harder than 3D?**  
 No, 2D is significantly easier to grasp. It focuses on flat geometry, coordinates, and lines, whereas 3D requires understanding spatial perspectives, lighting, and rendering.
 
-**Q3: Do I need a high end laptop to learn AutoCAD 2DD?**  
+**Q3: Do I need a high end laptop to learn AutoCAD 2D?**  
 Not for 2D! Unlike heavy 3D rendering software, basic 2D drafting runs smoothly on most modern mid range laptops with an Intel i5/Ryzen 5 processor and 8GB to 16GB of RAM.
 
 **Q4: How long does it take to learn AutoCAD 2D for an absolute beginner with zero background?**  
