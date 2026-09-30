@@ -1,0 +1,53 @@
+# Pages CMS config: gives you a WordPress-like editor for your articles
+media:
+  input: images
+  output: /images
+
+content:
+  - name: posts
+    label: Articles
+    type: collection
+    path: _posts
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      fields: [title, category, date]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Publish date
+        type: date
+        required: true
+        default: now
+      - name: category
+        label: Category
+        type: select
+        required: true
+        default: general
+        options:
+          values:
+            - { value: tech, label: "Tech & Coding" }
+            - { value: language, label: "Languages" }
+            - { value: exam, label: "Exams" }
+            - { value: creative, label: "Music & Art" }
+            - { value: life, label: "Life Skills" }
+            - { value: general, label: "General" }
+      - name: description
+        label: Short description (shows on cards and in Google)
+        type: text
+      - name: image
+        label: Cover image
+        type: image
+      - name: image_alt
+        label: Cover image description
+        type: string
+      - name: body
+        label: Article
+        type: rich-text

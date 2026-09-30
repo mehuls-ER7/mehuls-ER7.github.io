@@ -1,0 +1,25 @@
+---
+layout: default
+title: Topics
+description: Browse all How to Learn guides by topic.
+permalink: /topics/
+---
+<section class="wrap hero-small">
+  <h1 class="page-title">All topics</h1>
+  <p class="lead">Every guide, grouped by what you want to learn.</p>
+</section>
+
+{%- for cat in site.data.categories %}
+  {%- assign items = site.posts | where: "category", cat.slug -%}
+  {%- if items.size > 0 %}
+<section class="wrap topic-section" id="{{ cat.slug }}">
+  <h2 class="section-title"><span aria-hidden="true">{{ cat.emoji }}</span> {{ cat.name }} <span class="count">{{ items.size }}</span></h2>
+  <div class="grid">
+    {%- for post in items %}
+      {% include post-card.html post=post %}
+    {%- endfor %}
+  </div>
+</section>
+  {%- endif %}
+{%- endfor %}
+<div style="height:60px"></div>

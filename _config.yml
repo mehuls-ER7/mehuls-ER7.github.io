@@ -1,0 +1,26 @@
+# ---- Site settings ----
+title: How to Learn
+description: Simple, step-by-step guides on how to learn anything.
+url: "https://howtolearn.site"
+baseurl: ""
+lang: en
+timezone: Asia/Kolkata
+permalink: /learn/:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# ---- Homepage settings (easy to edit) ----
+cards_on_home: 6          # how many category cards show on the homepage
+shuffle_cards: false      # false = most recently updated category first, true = random 6 on every visit
+typing_words: [coding, English, guitar, for exams, AI, chess, anything]
+
+# Every article gets layout "post" and category "general" unless it says otherwise
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      category: general

@@ -1,436 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How to Learn – Simple guides to learn anything</title>
-<meta name="description" content="Step-by-step guides on how to learn coding, languages, music, exams and more.">
-<link rel="icon" href="logo/logo-icon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap" rel="stylesheet">
+---
+layout: default
+---
+{%- assign cats = site.data.categories -%}
 
-<style>
-  :root {
-    --ink: #1b2a4a;
-    --ink-soft: #4a5878;
-    --paper: #f3f6fb;
-    --card: #ffffff;
-    --highlight: #ffd84d;
-    --blue: #2f5bff;
-    --mint: #bfe9d6;
-    --peach: #ffd3b8;
-    --lilac: #d8d0ff;
-    --line: #d5dcea;
-    --display: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
-    --body: "Literata", Georgia, "Times New Roman", serif;
-  }
+{%- comment -%} Build the list of categories that have articles, newest-updated first {%- endcomment -%}
+{%- assign seen = "|" -%}
+{%- assign ordered = "" | split: "" -%}
+{%- for p in site.posts -%}
+  {%- assign key = "|" | append: p.category | append: "|" -%}
+  {%- unless seen contains key -%}
+    {%- assign seen = seen | append: p.category | append: "|" -%}
+    {%- assign ordered = ordered | push: p.category -%}
+  {%- endunless -%}
+{%- endfor -%}
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: var(--body);
-    color: var(--ink);
-    line-height: 1.65;
-    background-color: var(--paper);
-    /* graph-paper background: a notebook feel */
-    background-image:
-      linear-gradient(var(--line) 1px, transparent 1px),
-      linear-gradient(90deg, var(--line) 1px, transparent 1px);
-    background-size: 32px 32px;
-    background-attachment: fixed;
-  }
-  a { color: inherit; text-decoration: none; }
-  :focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; border-radius: 4px; }
+<!-- Hero -->
+<section class="hero wrap">
+  <h1 aria-label="How to learn anything" id="heroTitle" data-words="{{ site.typing_words | join: '|' }}">
+    How to learn <span class="rotator" id="rotator" aria-hidden="true">coding</span><span class="caret" aria-hidden="true"></span>
+  </h1>
+  <p class="lead">Simple, step-by-step guides that show you how to learn new skills faster, without the overwhelm. Pick a topic and start today.</p>
 
-  .wrap { width: min(1100px, 92%); margin: 0 auto; }
+  <form class="search" role="search" onsubmit="return false;">
+    <input id="searchInput" type="search" placeholder="What do you want to learn?" aria-label="Search guides">
+    <button type="button" id="searchBtn">Search</button>
+  </form>
+</section>
 
-  /* ---------- Header ---------- */
-  header {
-    position: sticky; top: 0; z-index: 10;
-    background: rgba(243, 246, 251, 0.92);
-    backdrop-filter: blur(6px);
-    border-bottom: 2px solid var(--ink);
-  }
-  .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 0; }
-  .brand { display: flex; align-items: center; gap: 12px; }
+{%- if site.posts.size > 0 %}
+{%- assign latest = site.posts.first -%}
+{%- assign latest_cat = cats | where: "slug", latest.category | first %}
 
-  /* LOGO SLOT: replace the contents of .logo-slot with <img src="logo.png" alt="How to Learn logo"> */
-  .logo-slot {
-    width: 48px; height: 48px; flex: none;
-    border: 2px dashed var(--ink-soft);
-    border-radius: 12px;
-    display: grid; place-items: center;
-    font: 700 11px/1.1 var(--display);
-    color: var(--ink-soft);
-    text-align: center;
-    overflow: hidden;
-  }
-  .logo-slot img { width: 100%; height: 100%; object-fit: contain; }
-
-  .brand-text { line-height: 1.1; }
-  .brand-name { font: 800 1.35rem var(--display); letter-spacing: -0.02em; }
-  /* DOMAIN NAME SLOT: change yourdomain.com to your real domain */
-  .brand-domain { font: 500 0.78rem var(--display); color: var(--ink-soft); }
-
-  nav ul { list-style: none; display: flex; gap: 22px; font: 500 0.98rem var(--display); }
-  nav a { padding: 6px 2px; border-bottom: 3px solid transparent; }
-  nav a:hover { border-bottom-color: var(--highlight); }
-  .nav-cta {
-    background: var(--ink); color: #fff; padding: 9px 18px;
-    border-radius: 999px; font: 700 0.92rem var(--display);
-  }
-  .nav-cta:hover { background: var(--blue); }
-
-  /* ---------- Hero ---------- */
-  .hero { padding: 84px 0 56px; }
-  .hero h1 {
-    font: 800 clamp(2.6rem, 8vw, 5.6rem)/1.02 var(--display);
-    letter-spacing: -0.035em;
-    max-width: 14ch;
-  }
-  .rotator {
-    display: inline-block;
-    background: var(--highlight);
-    padding: 0 0.18em;
-    margin-left: -0.05em;
-    border-radius: 6px;
-    min-width: 2ch;
-  }
-  .caret { display: inline-block; width: 0.08em; height: 0.85em; background: var(--ink); margin-left: 2px; vertical-align: -0.05em; animation: blink 1s steps(1) infinite; }
-  @keyframes blink { 50% { opacity: 0; } }
-
-  .hero p.lead { margin-top: 24px; max-width: 52ch; font-size: 1.15rem; color: var(--ink-soft); }
-
-  .search {
-    margin-top: 32px; display: flex; max-width: 520px;
-    background: var(--card); border: 2px solid var(--ink); border-radius: 14px;
-    box-shadow: 5px 5px 0 var(--ink); overflow: hidden;
-  }
-  .search input {
-    flex: 1; border: 0; padding: 15px 18px; font: 500 1rem var(--display);
-    background: transparent; color: var(--ink); min-width: 0;
-  }
-  .search input:focus { outline: none; }
-  .search:focus-within { box-shadow: 5px 5px 0 var(--blue); border-color: var(--blue); }
-  .search button {
-    border: 0; background: var(--highlight); color: var(--ink);
-    padding: 0 22px; font: 700 1rem var(--display); cursor: pointer;
-  }
-  .search button:hover { background: #ffcb1f; }
-
-  /* ---------- Topics ---------- */
-  .topics { display: flex; flex-wrap: wrap; gap: 10px; margin: 8px 0 36px; }
-  .chip {
-    border: 2px solid var(--ink); background: var(--card); color: var(--ink);
-    padding: 7px 16px; border-radius: 999px;
-    font: 600 0.92rem var(--display); cursor: pointer;
-  }
-  .chip:hover { background: var(--highlight); }
-  .chip[aria-pressed="true"] { background: var(--ink); color: #fff; }
-
-  /* ---------- Section titles ---------- */
-  .section-title { font: 800 1.9rem var(--display); letter-spacing: -0.02em; margin-bottom: 20px; }
-
-  /* ---------- Featured ---------- */
-  .featured {
-    display: grid; grid-template-columns: 1.1fr 1fr; gap: 0;
-    background: var(--card); border: 2px solid var(--ink); border-radius: 22px;
-    overflow: hidden; margin-bottom: 64px;
-    box-shadow: 8px 8px 0 var(--ink);
-  }
-  .featured .art {
-    background: var(--lilac); display: grid; place-items: center;
-    font-size: 6rem; min-height: 260px;
-  }
-  .featured .text { padding: 34px; display: flex; flex-direction: column; justify-content: center; gap: 14px; }
-  .tag { align-self: flex-start; background: var(--mint); border-radius: 6px; padding: 2px 10px; font: 700 0.82rem var(--display); }
-  .featured h2 { font: 800 clamp(1.5rem, 3vw, 2.1rem)/1.15 var(--display); letter-spacing: -0.02em; }
-  .featured p { color: var(--ink-soft); }
-  .read-link { font: 700 1rem var(--display); border-bottom: 3px solid var(--highlight); align-self: flex-start; }
-  .read-link:hover { border-bottom-color: var(--blue); }
-
-  /* ---------- Post grid ---------- */
-  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
-  .post {
-    background: var(--card); border: 2px solid var(--ink); border-radius: 18px;
-    overflow: hidden; display: flex; flex-direction: column;
-    transition: transform .15s ease, box-shadow .15s ease;
-  }
-  .post:hover { transform: translate(-3px, -3px); box-shadow: 6px 6px 0 var(--ink); }
-  .post .thumb { height: 150px; display: grid; place-items: center; font-size: 3.4rem; border-bottom: 2px solid var(--ink); }
-  .post:nth-child(3n+1) .thumb { background: var(--mint); }
-  .post:nth-child(3n+2) .thumb { background: var(--peach); }
-  .post:nth-child(3n) .thumb { background: var(--lilac); }
-  .post .body { padding: 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
-  .post h3 { font: 700 1.2rem/1.25 var(--display); letter-spacing: -0.01em; }
-  .post p { font-size: 0.95rem; color: var(--ink-soft); flex: 1; }
-  .meta { font: 500 0.82rem var(--display); color: var(--ink-soft); }
-  .empty { display: none; padding: 30px; text-align: center; background: var(--card); border: 2px dashed var(--ink-soft); border-radius: 16px; font: 500 1.05rem var(--display); }
-
-  /* ---------- Newsletter ---------- */
-  .news {
-    margin: 80px 0; background: var(--ink); color: #fff;
-    border-radius: 24px; padding: 48px 34px; text-align: center;
-  }
-  .news h2 { font: 800 clamp(1.7rem, 4vw, 2.4rem) var(--display); letter-spacing: -0.02em; }
-  .news p { margin: 10px auto 24px; max-width: 46ch; color: #c9d3ec; }
-  .news form { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
-  .news input {
-    padding: 14px 18px; min-width: min(300px, 100%); border-radius: 12px; border: 2px solid #fff;
-    font: 500 1rem var(--display); background: #fff; color: var(--ink);
-  }
-  .news button {
-    padding: 14px 24px; border-radius: 12px; border: 0; cursor: pointer;
-    background: var(--highlight); color: var(--ink); font: 800 1rem var(--display);
-  }
-  .news button:hover { background: #ffcb1f; }
-  .thanks { display: none; color: var(--highlight); font: 700 1.05rem var(--display); }
-
-  /* ---------- Footer ---------- */
-  footer { border-top: 2px solid var(--ink); background: var(--paper); padding: 32px 0; }
-  .foot { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; font: 500 0.92rem var(--display); color: var(--ink-soft); }
-  .foot ul { list-style: none; display: flex; gap: 18px; }
-  .foot a:hover { color: var(--blue); }
-
-  /* ---------- Responsive ---------- */
-  @media (max-width: 900px) {
-    .grid { grid-template-columns: repeat(2, 1fr); }
-    .featured { grid-template-columns: 1fr; }
-    nav { display: none; }
-  }
-  @media (max-width: 580px) {
-    .grid { grid-template-columns: 1fr; }
-    .hero { padding-top: 52px; }
-    .brand-domain { display: none; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    .caret { animation: none; }
-    .post { transition: none; }
-  }
-</style>
-</head>
-
-<body>
-
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="index.html" aria-label="How to Learn – home">
-      <!-- LOGO SLOT: put your logo image here, e.g. <img src="logo.png" alt="How to Learn logo"> -->
-      <img class="logo-slot" src="logo/logo-icon.svg" alt="How to Learn logo">
-      <span class="brand-text">
-        <span class="brand-name">How to Learn</span><br>
-        <!-- DOMAIN NAME SLOT: write your real domain here -->
-        <span class="brand-domain">howtolearn.site</span>
-      </span>
+<!-- Featured: newest article -->
+<section class="wrap" aria-label="Newest guide">
+  <article class="featured">
+    <a class="art" href="{{ latest.url | relative_url }}" style="--tint: {{ latest_cat.color | default: '#d8d0ff' }}" tabindex="-1" aria-hidden="true">
+      {%- if latest.image -%}
+        <img src="{{ latest.image | relative_url }}" alt="" loading="lazy">
+      {%- else -%}
+        <span class="emoji">{{ latest_cat.emoji | default: "✨" }}</span>
+      {%- endif -%}
     </a>
-    <nav aria-label="Main">
-      <ul>
-        <li><a href="#posts">Latest guides</a></li>
-        <li><a href="#topics">Topics</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </nav>
-    <a class="nav-cta" href="#subscribe">Get new guides</a>
-  </div>
-</header>
-
-<main>
-  <!-- Hero -->
-  <section class="hero wrap">
-    <h1 aria-label="How to learn anything">
-      How to learn <span class="rotator" id="rotator" aria-hidden="true">coding</span><span class="caret" aria-hidden="true"></span>
-    </h1>
-    <p class="lead">Simple, step-by-step guides that show you how to learn new skills faster, without the overwhelm. Pick a topic and start today.</p>
-
-    <form class="search" role="search" onsubmit="return false;">
-      <input id="searchInput" type="search" placeholder="What do you want to learn?" aria-label="Search guides">
-      <button type="button" id="searchBtn">Search</button>
-    </form>
-  </section>
-
-  <!-- Topics -->
-  <section class="wrap" id="topics" aria-label="Topics">
-    <div class="topics" id="chips">
-      <button class="chip" data-topic="all" aria-pressed="true">All</button>
-      <button class="chip" data-topic="tech" aria-pressed="false">Tech &amp; Coding</button>
-      <button class="chip" data-topic="language" aria-pressed="false">Languages</button>
-      <button class="chip" data-topic="exam" aria-pressed="false">Exams</button>
-      <button class="chip" data-topic="creative" aria-pressed="false">Music &amp; Art</button>
-      <button class="chip" data-topic="life" aria-pressed="false">Life Skills</button>
+    <div class="text">
+      <span class="tag">Newest guide</span>
+      <h2><a href="{{ latest.url | relative_url }}">{{ latest.title }}</a></h2>
+      <p>{{ latest.description | default: latest.excerpt | strip_html | strip | truncatewords: 30 }}</p>
+      <a class="read-link" href="{{ latest.url | relative_url }}">Read the guide</a>
     </div>
-  </section>
+  </article>
+</section>
 
-  <!-- Featured -->
-  <section class="wrap" aria-label="Featured guide">
-    <article class="featured">
-      <div class="art" aria-hidden="true">🧠</div>
-      <div class="text">
-        <span class="tag">Start here</span>
-        <h2>How to learn anything in 30 days: a simple plan</h2>
-        <p>Learn how to break any skill into small parts, practice smart, and track your progress. Works for coding, languages, music and more.</p>
-        <a class="read-link" href="#">Read the guide</a>
+<!-- Category cards -->
+<section class="wrap" id="topics" aria-label="Topics">
+  <div class="section-head">
+    <h2 class="section-title">Explore by topic</h2>
+    <a class="read-link" href="{{ '/topics/' | relative_url }}">All topics</a>
+  </div>
+  <div class="cat-grid" id="catGrid" data-shuffle="{{ site.shuffle_cards }}" data-max="{{ site.cards_on_home }}">
+    {%- for slug in ordered %}
+      {%- assign meta = cats | where: "slug", slug | first -%}
+      {%- assign items = site.posts | where: "category", slug %}
+    <article class="cat-card{% if forloop.index > site.cards_on_home %} is-extra{% endif %}" style="--tint: {{ meta.color | default: '#d8d0ff' }}">
+      <div class="cat-head">
+        <span class="cat-emoji" aria-hidden="true">{{ meta.emoji | default: "✨" }}</span>
+        <div>
+          <h3>{{ meta.name | default: slug }}</h3>
+          <span class="meta">{{ items.size }} guide{% if items.size != 1 %}s{% endif %}</span>
+        </div>
       </div>
+      <ul>
+        {%- for it in items limit: 3 %}
+        <li><a href="{{ it.url | relative_url }}">{{ it.title }}</a></li>
+        {%- endfor %}
+      </ul>
+      <a class="read-link" href="{{ '/topics/' | relative_url }}#{{ slug }}">See all {{ items.size }}</a>
     </article>
-  </section>
-
-  <!-- Posts -->
-  <section class="wrap" id="posts">
-    <h2 class="section-title">Latest guides</h2>
-    <div class="grid" id="grid">
-
-      <article class="post" data-topic="tech">
-        <div class="thumb" aria-hidden="true">💻</div>
-        <div class="body">
-          <span class="meta">Tech &amp; Coding · 6 min read</span>
-          <h3><a href="#">How to learn Python from zero</a></h3>
-          <p>A beginner roadmap with small projects so you actually remember what you learn.</p>
-        </div>
-      </article>
-
-      <article class="post" data-topic="language">
-        <div class="thumb" aria-hidden="true">🗣️</div>
-        <div class="body">
-          <span class="meta">Languages · 5 min read</span>
-          <h3><a href="#">How to learn English speaking at home</a></h3>
-          <p>Daily habits, free tools and speaking practice that build confidence fast.</p>
-        </div>
-      </article>
-
-      <article class="post" data-topic="exam">
-        <div class="thumb" aria-hidden="true">📚</div>
-        <div class="body">
-          <span class="meta">Exams · 8 min read</span>
-          <h3><a href="#">How to learn for competitive exams</a></h3>
-          <p>Build a study plan, revise on schedule and stay consistent without burning out.</p>
-        </div>
-      </article>
-
-      <article class="post" data-topic="creative">
-        <div class="thumb" aria-hidden="true">🎸</div>
-        <div class="body">
-          <span class="meta">Music &amp; Art · 5 min read</span>
-          <h3><a href="#">How to learn guitar in 20 minutes a day</a></h3>
-          <p>Chords, rhythm and a practice routine that fits into a busy day.</p>
-        </div>
-      </article>
-
-      <article class="post" data-topic="tech">
-        <div class="thumb" aria-hidden="true">🤖</div>
-        <div class="body">
-          <span class="meta">Tech &amp; Coding · 7 min read</span>
-          <h3><a href="#">How to learn AI and machine learning</a></h3>
-          <p>What to study first, which projects to build and how to avoid tutorial hell.</p>
-        </div>
-      </article>
-
-      <article class="post" data-topic="life">
-        <div class="thumb" aria-hidden="true">⏱️</div>
-        <div class="body">
-          <span class="meta">Life Skills · 4 min read</span>
-          <h3><a href="#">How to learn faster with better focus</a></h3>
-          <p>Simple techniques for memory, note-taking and staying away from distractions.</p>
-        </div>
-      </article>
-
-    </div>
-    <p class="empty" id="empty">No guides found yet. Try another word or topic.</p>
-  </section>
-
-  <!-- Newsletter -->
-  <section class="wrap" id="subscribe">
-    <div class="news">
-      <h2>Get one new how-to guide every week</h2>
-      <p>Free, short and practical. No spam, unsubscribe anytime.</p>
-      <form id="newsForm">
-        <input type="email" required placeholder="you@example.com" aria-label="Email address">
-        <button type="submit">Subscribe</button>
-      </form>
-      <p class="thanks" id="thanks">Thanks! You are on the list.</p>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="wrap" id="about" style="margin-bottom:70px;">
-    <h2 class="section-title">About this blog</h2>
-    <p style="max-width:62ch;">This blog is all about learning: how to start, how to stay consistent and how to get good at things you care about. Every post is written in simple language so anyone can follow along. Write a short line about yourself here.</p>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap foot">
-    <span>© <span id="year"></span> How to Learn · howtolearn.site</span>
-    <ul>
-      <li><a href="#">Privacy</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">YouTube</a></li>
-    </ul>
+    {%- endfor %}
   </div>
-</footer>
+</section>
 
-<script>
-  // Footer year
-  document.getElementById('year').textContent = new Date().getFullYear();
+<!-- Latest articles (all categories) -->
+<section class="wrap" id="posts">
+  <h2 class="section-title">Latest guides</h2>
+  <div class="topics" id="chips">
+    <button class="chip" data-topic="all" aria-pressed="true">All</button>
+    {%- for slug in ordered %}
+      {%- assign meta = cats | where: "slug", slug | first %}
+    <button class="chip" data-topic="{{ slug }}" aria-pressed="false">{{ meta.name | default: slug }}</button>
+    {%- endfor %}
+  </div>
+  <div class="grid" id="grid">
+    {%- for post in site.posts %}
+      {% include post-card.html post=post %}
+    {%- endfor %}
+  </div>
+  <p class="empty" id="empty">No guides found yet. Try another word or topic.</p>
+  <div class="more-wrap"><button class="chip" id="moreBtn" type="button">Show more guides</button></div>
+</section>
+{%- else %}
+<section class="wrap" id="posts">
+  <p class="empty" style="display:block">No articles yet. Publish your first one from the CMS and it will appear here.</p>
+</section>
+{%- endif %}
 
-  // Typing headline: edit this list to show your own topics
-  const words = ['coding', 'English', 'guitar', 'for exams', 'AI', 'chess', 'anything'];
-  const el = document.getElementById('rotator');
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduce) {
-    el.textContent = 'anything';
-  } else {
-    let w = 0, c = words[0].length, deleting = false;
-    (function tick() {
-      const word = words[w];
-      el.textContent = word.slice(0, c);
-      let delay = deleting ? 55 : 110;
-      if (!deleting && c === word.length) { deleting = true; delay = 1400; }
-      else if (deleting && c === 0) { deleting = false; w = (w + 1) % words.length; delay = 300; }
-      else { c += deleting ? -1 : 1; }
-      setTimeout(tick, delay);
-    })();
-  }
+<!-- Newsletter -->
+<section class="wrap" id="subscribe">
+  <div class="news">
+    <h2>Get one new how-to guide every week</h2>
+    <p>Free, short and practical. No spam, unsubscribe anytime.</p>
+    <form id="newsForm">
+      <input type="email" required placeholder="you@example.com" aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="thanks" id="thanks">Thanks! You are on the list.</p>
+  </div>
+</section>
 
-  // Topic filter + search
-  const chips = document.querySelectorAll('.chip');
-  const posts = document.querySelectorAll('.post');
-  const input = document.getElementById('searchInput');
-  const empty = document.getElementById('empty');
-  let topic = 'all';
-
-  function applyFilter() {
-    const q = input.value.trim().toLowerCase();
-    let shown = 0;
-    posts.forEach(p => {
-      const okTopic = topic === 'all' || p.dataset.topic === topic;
-      const okText = !q || p.textContent.toLowerCase().includes(q);
-      const show = okTopic && okText;
-      p.style.display = show ? '' : 'none';
-      if (show) shown++;
-    });
-    empty.style.display = shown ? 'none' : 'block';
-  }
-
-  chips.forEach(chip => chip.addEventListener('click', () => {
-    chips.forEach(c => c.setAttribute('aria-pressed', 'false'));
-    chip.setAttribute('aria-pressed', 'true');
-    topic = chip.dataset.topic;
-    applyFilter();
-  }));
-  input.addEventListener('input', applyFilter);
-  document.getElementById('searchBtn').addEventListener('click', () => {
-    applyFilter();
-    document.getElementById('posts').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
-  });
-
-  // Newsletter (demo only: connect this to Mailchimp, ConvertKit, etc.)
-  document.getElementById('newsForm').addEventListener('submit', e => {
-    e.preventDefault();
-    e.target.style.display = 'none';
-    document.getElementById('thanks').style.display = 'block';
-  });
-</script>
-</body>
-</html>
+<!-- About -->
+<section class="wrap" id="about" style="margin-bottom:70px;">
+  <h2 class="section-title">About this blog</h2>
+  <p style="max-width:62ch;">This blog is all about learning: how to start, how to stay consistent and how to get good at things you care about. Every post is written in simple language so anyone can follow along. Write a short line about yourself here.</p>
+</section>
