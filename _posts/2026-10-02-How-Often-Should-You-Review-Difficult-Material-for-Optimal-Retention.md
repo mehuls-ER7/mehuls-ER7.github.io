@@ -3,6 +3,7 @@ title: "How Often Should You Review Difficult Material for Optimal Retention?"
 date: 2026-10-01
 category: Exams
 description: "Discover the exact scientifically proven review schedule to master difficult topics, crush your exams, and retain complex material permanently."
+image: "/images/how-to-retain.jpg"
 ---
 
 Have you ever spent three straight hours wrestling with a brutally tough concept, like advanced organic chemistry mechanisms, multi-step calculus proofs, or dense legal statutes? You finally feel like you understand it, only to open your notes three days later and realize it looks like complete gibberish again.
