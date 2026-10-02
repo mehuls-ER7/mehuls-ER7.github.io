@@ -12,7 +12,7 @@ It is incredibly frustrating, isn't it? You put in the sweat equity, you sat in 
 
 Here is the truth: your brain is not broken. You are just fighting Hermann Ebbinghaus's Forgetting Curve. When study material is light and simple, a standard, cookie-cutter review schedule works fine. But when the material is inherently difficult, standard advice fails miserably. Let us break down the exact science-backed frequency you need to retain complex concepts without losing your sanity.
 
-## The Short Answer (Featured Snippet)
+## The Short Answer 
 
 For complex or difficult material, the optimal review schedule follows a modified spaced repetition model with shorter early gaps: **Review 1 (24 hours)**, **Review 2 (Day 3 or 4)**, **Review 3 (Day 7)**, **Review 4 (Day 14)**, and **Review 5 (Day 30)**. 
 
