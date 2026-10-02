@@ -1,7 +1,7 @@
 ---
 title: "How to learn Chinese for beginners"
 date: 2026-10-01
-category: "Languages"
+category: language
 description: "A comprehensive step by step blueprint on how to learn Chinese language for beginners easily without getting overwhelmed by characters and tones."
 image: "/images/how-to-learn-chinese.jpg"
 ---
