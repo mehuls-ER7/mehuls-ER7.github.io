@@ -13,7 +13,7 @@ Take a deep breath and step away from the calculator!
 
 As an elder brother who has spent late nights fixing broken CAD files and making all the beginner mistakes for you, let me tell you a secret: **AutoCAD can calculate the exact scale for you.** You do not need to do any math. By using two reference points, you simply show AutoCAD what length an object currently is, tell it what length it should be, and let the software handle the rest.
 
-If you are still getting comfortable with the interface or finding your ground in drafting, take a moment to review our complete [how to learn AutoCAD 2D guide](https://howtolearn.site/learn/how-to-learn-autocad-2d-guide/) to solidify your foundational shortcuts.
+Scaling and aligning objects efficiently comes naturally once you build basic keyboard muscle memory. If you are trying to gauge your overall progress, our guide on [how long it takes to learn AutoCAD 2D](https://howtolearn.site/learn/how-to-learn-autocad-2d-guide/) breaks down the exact 4-week roadmap to reach workplace speed.
 
 Now, let us walk through scaling with reference points step by step so you never have to guess a scale factor again.
 
@@ -105,11 +105,7 @@ Now your entire PDF is calibrated 1:1 with real-world units, allowing you to tra
 
 If you are new to the software and wondering if picking up these concepts takes months, check out our honest breakdown on [is AutoCAD hard to learn?](https://howtolearn.site/learn/is-autocad-hard-to-learn-article/) to understand the realistic learning curve.
 
-## Need Visual Guidance? Watch This Walkthrough
-
-For visual guidance and step-by-step walkthroughs, check out this video tutorial breaking down scaling by reference in real time:
-
-[![How to Scale with Two Reference Points in AutoCAD](https://img.youtube.com/vi/v3vL-sP8O30/hqdefault.jpg)](https://www.youtube.com/watch?v=v3vL-sP8O30 "Click to watch AutoCAD scaling tutorial")
+If you want a quick visual walkthrough of how this reference workflow handles alignment on real drawings, you can watch this step-by-step breakdown on [how to scale with reference points in AutoCAD](https://www.youtube.com/watch?v=v3vL-sP8O30).
 
 ## 4 Common Scaling Pitfalls (And How to Avoid Them)
 
