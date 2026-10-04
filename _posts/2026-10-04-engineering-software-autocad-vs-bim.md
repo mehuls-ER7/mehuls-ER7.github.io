@@ -16,15 +16,15 @@ AutoCAD is a computer-aided drafting (CAD) software used to draw precise 2D line
 
 ## Engineering Software AutoCAD vs BIM: The Honest Truth No One Tells You
 
-A few months ago, a junior civil engineer I know, let us call him Rahul, called me late on a Tuesday evening. He was completely stressed out.
+A few months ago, a junior civil engineer I know, let us call him Ash, called me late on a Tuesday evening. He was completely stressed out.
 
 He had just spent six months getting comfortable with 2D drafting, learning how to offset walls, set up layers, and organize plot styles. Then, during his performance review, his project manager turned to him and casually said: "Hey, we are transitioning all our upcoming structural projects to BIM. Hope you are ready."
 
-Rahul panicked. He went straight home, opened Google, and searched through dozens of articles and forum threads asking: Is AutoCAD outdated? Should I drop CAD completely and learn BIM? Which engineering software is actually better?
+Ash panicked. He went straight home, opened Google, and searched through dozens of articles and forum threads asking: Is AutoCAD outdated? Should I drop CAD completely and learn BIM? Which engineering software is actually better?
 
 If you have been searching online, you have probably seen the exact same confusion. Half the internet acts like AutoCAD is dead, while the other half insists it is all you will ever need.
 
-Sit down, grab a cup of coffee, and let us clear up the noise once and for all. Think of this as the honest, elder-brother conversation Rahul wished he had before losing sleep over CAD versus BIM.
+Sit down, grab a cup of coffee, and let us clear up the noise once and for all. Think of this as the honest, elder-brother conversation Ash wished he had before losing sleep over CAD versus BIM.
 
 ---
 
@@ -57,7 +57,7 @@ To make this crystal clear, let us look at how both approaches handle a simple d
 
 ## Why AutoCAD Isn't Going Anywhere Anytime Soon
 
-When Rahul called me, his biggest fear was that all his hard work learning AutoCAD commands was going to be completely wasted.
+When Ash called me, his biggest fear was that all his hard work learning AutoCAD commands was going to be completely wasted.
 
 I told him what I tell every beginner: AutoCAD is the universal language of design.
 
