@@ -18,7 +18,7 @@ If you are still getting comfortable with the interface or finding your ground i
 
 Now, let us walk through scaling with reference points step by step so you never have to guess a scale factor again.
 
-## The Featured Snippet (Quick Answer)
+## Quick Answer
 
 To scale an object using two reference points in AutoCAD:
 
