@@ -6,7 +6,7 @@ description: "Confused between engineering software AutoCAD and BIM? Here is a c
 image: images/autocad-vs-bim.jpg
 ---
 
-## Featured Snippet Quick Answer
+## Quick Answer
 
 ### What is the difference between engineering software AutoCAD and BIM?
 
