@@ -1,9 +1,9 @@
 ---
-title: "How to Scale with Two Reference Points in AutoCAD (Step-by-Step)"
+title: "How to Scale with Two Reference Points in AutoCAD"
 date: 2026-10-01
 category: tech
 description: "A complete step-by-step guide on scaling by reference and alignment in AutoCAD without calculating scale factors manually."
-image: images/autocad-scale.jpg
+![Engineering student practicing 2D floor plan drafting on AutoCAD](images/autocad-2d-drafting-workspace.webp)
 ---
 
 So, you are sitting in front of your screen with an imported site plan, a PDF blueprint, or an unscaled CAD block, and the dimensions are completely out of whack. 
