@@ -5,9 +5,6 @@ category: tech
 description: "A complete step-by-step guide on scaling by reference and alignment in AutoCAD without calculating scale factors manually."
 image: images/autocad-2d-drafting-workspace.webp
 ---
-
-![Engineering student practicing 2D floor plan drafting on AutoCAD](images/autocad-2d-drafting-workspace.webp)
-
 So, you are sitting in front of your screen with an imported site plan, a PDF blueprint, or an unscaled CAD block, and the dimensions are completely out of whack. 
 
 Maybe you tried multiplying numbers on a calculator, typing in random scale factors like 0.0254 or 12, and watching your drawing either shrink into a microscopic dot or explode across Model Space. 
@@ -30,12 +27,6 @@ To scale an object using two reference points in AutoCAD:
 4. Type **R** (for Reference) and press **Enter**.
 5. Click the **First Point** and **Second Point** on your object to define its current length.
 6. Type the **New Desired Length** and press **Enter**.
-
----
-
-<Image src="image_agent_tag_4797093228853174132" alt="AutoCAD interface showing the SCALE command with the Reference option active" caption="AutoCAD Scale Command with Reference Option" />
-
----
 
 ## Why Scale by Reference Instead of Using Math?
 
