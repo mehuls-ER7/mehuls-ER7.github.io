@@ -105,7 +105,7 @@ Now your entire PDF is calibrated 1:1 with real-world units, allowing you to tra
 
 If you are new to the software and wondering if picking up these concepts takes months, check out our honest breakdown on [is AutoCAD hard to learn?](https://howtolearn.site/learn/is-autocad-hard-to-learn-article/) to understand the realistic learning curve.
 
-If you want a quick visual walkthrough of how this reference workflow handles alignment on real drawings, you can watch this step-by-step breakdown on [how to scale with reference points in AutoCAD](https://www.youtube.com/watch?v=v3vL-sP8O30).
+If you want a quick visual walkthrough of how this reference workflow handles alignment on real drawings, you can watch this step-by-step breakdown on [how to scale with reference points in AutoCAD](https://youtu.be/hugdhBqns2s?si=3n_Lv4mH8YKU_cp_).
 
 ## 4 Common Scaling Pitfalls (And How to Avoid Them)
 
