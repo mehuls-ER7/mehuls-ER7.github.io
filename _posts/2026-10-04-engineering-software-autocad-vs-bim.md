@@ -26,8 +26,6 @@ If you have been searching online, you have probably seen the exact same confusi
 
 Sit down, grab a cup of coffee, and let us clear up the noise once and for all. Think of this as the honest, elder-brother conversation Rahul wished he had before losing sleep over CAD versus BIM.
 
-<Image src="image_agent_tag_14210975663083653588" alt="Revit vs AutoCAD hardware and stability comparison" caption="Comparing CAD software stability and resource overhead" />
-
 ---
 
 ## The Big Myth: "AutoCAD vs. BIM" Is the Wrong Comparison
