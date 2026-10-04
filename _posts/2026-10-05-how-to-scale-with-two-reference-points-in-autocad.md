@@ -40,26 +40,25 @@ Scaling by two reference points eliminates rounding errors completely. It provid
 
 This is the classic technique you will use 90% of the time when you know a single real-world distance, such as a doorway width, property boundary, or grid line.
 
-<Sequence>
-  <Step title="Activate the Scale Command" subtitle="Command line input">
-    Type **SC** or **SCALE** in the command prompt and press **Enter**.
-  </Step>
-  <Step title="Select Your Objects" subtitle="Highlight the unscaled linework">
-    Click or drag a selection window over all the objects and imported images you want to resize. Once everything is selected, press **Enter**.
-  </Step>
-  <Step title="Specify the Base Point" subtitle="Your stationary anchor point">
-    Left-click a point on the object that should stay in place. This base point acts as the anchor around which the rest of the geometry expands or contracts.
-  </Step>
-  <Step title="Trigger the Reference Option" subtitle="Type R">
-    Look down at your command bar. Instead of entering a number, type **R** and press **Enter**.
-  </Step>
-  <Step title="Pick Your Two Reference Points" subtitle="Defining current length">
-    Click the **first point** at the start of your known line. Then, click the **second point** at the end of that same line. You have now told AutoCAD: *"This is the current distance I want to fix."*
-  </Step>
-  <Step title="Enter the New Real-World Dimension" subtitle="Setting target length">
-    Type the exact dimension you want that line to be (for example, type **12** for 12 inches or **3500** for 3500 mm) and press **Enter**. Your entire drawing will scale to match.
-  </Step>
-</Sequence>
+### Step 1: Activate the Scale Command
+Type `SC` or `SCALE` in the command prompt and press **Enter**.
+
+### Step 2: Select Your Objects
+Click or drag a selection window over all the objects and imported images you want to resize. Once everything is selected, press **Enter**.
+
+### Step 3: Specify the Base Point
+Left-click a point on the object that should stay in place. This base point acts as the anchor around which the rest of the geometry expands or contracts.
+
+### Step 4: Trigger the Reference Option
+Look down at your command bar. Instead of entering a scale factor number, type `R` and press **Enter**.
+
+### Step 5: Pick Your Two Reference Points
+Click the **first point** at the start of your known line, then click the **second point** at the end of that same line. You have now told AutoCAD: *"This is the current distance I want to fix."*
+
+### Step 6: Enter the New Real-World Dimension
+Type the exact dimension you want that line to be (for example, type `12` for 12 inches or `3500` for 3500 mm) and press **Enter**. 
+
+Your entire drawing will instantly scale to match.
 
 ## Method 2: The Pro Shortcut - Scale and Align Simultaneously
 
