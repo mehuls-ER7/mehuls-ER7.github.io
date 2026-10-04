@@ -61,7 +61,7 @@ This is the classic technique you will use 90% of the time when you know a singl
   </Step>
 </Sequence>
 
-## Method 2: The Pro Shortcut — Scale and Align Simultaneously
+## Method 2: The Pro Shortcut - Scale and Align Simultaneously
 
 Now, here is something most basic blogs completely fail to teach you. 
 
