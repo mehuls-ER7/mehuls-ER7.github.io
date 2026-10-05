@@ -3,7 +3,7 @@ title: "How to learn Chinese for beginners"
 date: 2026-10-01
 category: language
 description: "A comprehensive step by step blueprint on how to learn Chinese language for beginners easily without getting overwhelmed by characters and tones."
-image: "/images/how-to-learn-chinese.jpg"
+image: "/images/learn-chinese-for-beginners.webp"
 ---
 
 So, you have decided to tackle Chinese. That is incredible! Whether you want to boost your resume, travel across Asia, or dive into a rich culture, taking this step is exciting.
