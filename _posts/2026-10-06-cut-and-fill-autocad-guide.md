@@ -8,7 +8,7 @@ image: "/images/autocad-cut-fill-v1.jpg"
 
 Ever stood on a site plan, coffee in hand, wondering why earthwork volumes never match up between field estimates and office models?
 
-Calculating site earthwork is far more than just clicking buttons in a software suite—it is about keeping projects profitable, avoiding double costs on dirt hauling, and ensuring you do not overspend on imported fill material.
+Calculating site earthwork is far more than just clicking buttons in a software suite, it is about keeping projects profitable, avoiding double costs on dirt hauling, and ensuring you do not overspend on imported fill material.
 
 If you have tried searching online to **learn AutoCAD** workflows for site grading and surface analysis, you have probably noticed that top guides leave massive gaps. Most articles either toss a quick command at you or spend paragraphs describing basic contour lines without demonstrating how to verify raw output accuracy.
 
