@@ -46,9 +46,9 @@ Before building any surface elements, audit your survey points or imported DWG l
 
 ### Step 2: Build Base (EG) and Proposed (FG) Surfaces
 1. Open your **Toolspace** palette and switch to the **Prospector** tab.
-2. Right-click **Surfaces** $\rightarrow$ **Create Surface**.
+2. Right-click **Surfaces** → **Create Surface**.
 3. Name your initial surface `EG_Surface` (Existing Ground).
-4. Expand `EG_Surface` $\rightarrow$ **Definition**, right-click **Point Groups** or **Contours**, and assign your survey data.
+4. Expand `EG_Surface` → **Definition**, right-click **Point Groups** or **Contours**, and assign your survey data.
 5. Repeat this exact sequence to build your target `FG_Surface` (Finished Ground / Proposed Site).
 
 ### Step 3: Compute Volumes via the Volumes Dashboard
@@ -73,7 +73,7 @@ Here is where your actual **cut and fill calculations in AutoCAD** take shape:
 └────────────────────────────────────────────────────────┘
 ```
 
-7. **Essential Setting:** Adjust your **Cut Factor** and **Fill Factor**. Natural bank soil expands when dug up (Cut Factor $\approx 1.00$–$1.05$), whereas placed fill requires soil compaction (Fill Factor $\approx 1.15$–$1.20$).
+7. **Essential Setting:** Adjust your **Cut Factor** and **Fill Factor**. Natural bank soil expands when dug up (Cut Factor ≈ 1.00 – 1.05), whereas placed fill requires soil compaction (Fill Factor ≈ 1.15 – 1.20).
 
 ---
 
@@ -98,12 +98,12 @@ Numerical output tables work well for civil calculations, but field teams and pr
 ## Manual Method: Average End Area Cross-Sections
 If you are operating basic AutoCAD without Civil 3D tools, you can still perform cut and fill calculations using the traditional cross-section method:
 
-$$\text{Volume} = L \times \left( \frac{A_1 + A_2}{2} \right)$$
+> **Volume = L × [(A1 + A2) / 2]**
 
 Where:
-* $L$ = Distance separating cross-section stations
-* $A_1$ = Cut or fill area of the initial station
-* $A_2$ = Cut or fill area of the adjacent station
+* **L** = Distance separating cross-section stations
+* **A1** = Cut or fill area of the initial station
+* **A2** = Cut or fill area of the adjacent station
 
 1. Draft station cross-sections at consistent intervals (e.g., every 50 feet).
 2. Execute the `AREA` command or join closed cut/fill boundaries into polylines (`PLINE`), reading area values from the **Properties** window (`Ctrl + 1`).
