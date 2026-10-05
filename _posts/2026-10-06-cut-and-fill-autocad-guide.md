@@ -3,7 +3,7 @@ title: "How to Do Cut and Fill Calculations in AutoCAD"
 date: 2026-10-01
 category: tech
 description: "A complete step-by-step guide to mastering cut and fill calculations in AutoCAD Civil 3D, earthwork volume dashboard workflows, and site grading precision."
-image: /images/autocad-cut-fill-v1.jpg
+image: "/images/autocad-cut-fill-v1.jpg"
 ---
 
 Ever stood on a site plan, coffee in hand, wondering why earthwork volumes never match up between field estimates and office models?
@@ -112,9 +112,6 @@ Where:
 ---
 
 ## Frequently Asked Questions
-
-### Are FAQ sections still necessary for modern SEO?
-**Yes, absolutely.** Modern search engines rely heavily on direct conversational answers, voice queries, and semantic context. A well-structured FAQ block captures long-tail search intent and helps your content rank for target featured snippets.
 
 ### How do I export cut and fill volume results to Excel?
 Inside the **Volumes Dashboard**, select your active volume surface and click **Generate Cut/Fill Report**. This produces an XML/HTML summary that imports directly into Microsoft Excel spreadsheets.
