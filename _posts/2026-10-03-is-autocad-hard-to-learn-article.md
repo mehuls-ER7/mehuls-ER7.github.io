@@ -3,7 +3,7 @@ title: "Is AutoCAD Hard to Learn?"
 date: 2026-10-01
 category: tech
 description: "An honest breakdown of how difficult is it to learn AutoCAD, common beginner mistakes, and a practical guide to mastering 2D drafting."
-image: images/is-autocad-hard-to-learn1.jpg
+image: images/is-autocad-hard-to-learnv1.jpg
 ---
 
 So, you are staring at that dark grid-patterned screen, seeing dozens of tiny icons on the ribbon, and asking yourself: **is autocad hard to learn**?
