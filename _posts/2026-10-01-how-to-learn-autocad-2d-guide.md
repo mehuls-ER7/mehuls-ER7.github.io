@@ -3,7 +3,7 @@ title: "How Long Does It Take to Learn AutoCAD 2D?"
 date: 2026-10-01
 category: tech
 description: "An honest guide on learning AutoCAD 2D speed, a realistic 4-week roadmap, and how to build true drafting speed."
-image: images/autocad2d-v1.jpg
+image: /images/autocad2d-v1.jpg
 ---
 
 So, you have decided to jump into AutoCAD 2D. That is awesome! Whether you are pivoting your career toward drafting, starting an interior design degree, or just trying to pull your weight at a construction site, you have picked an industry standard skill.
