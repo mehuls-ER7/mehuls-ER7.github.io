@@ -14,7 +14,7 @@ If you have tried searching online to **learn AutoCAD** workflows for site gradi
 
 Let us clear up the noise right now like an elder guide who has already walked this ground, stumbled over the pitfalls, and knows exactly where the shortcuts are.
 
-> **Quick Answer (Featured Snippet)**  
+> **Quick Answer**  
 > To execute **cut and fill calculations in AutoCAD** Civil 3D, create two distinct TIN surfaces: an **Existing Ground (EG)** surface and a **Finished Ground (FG)** design surface. Next, open the **Analyze** tab, navigate to the **Volumes Dashboard**, and choose **Create New Volume Surface**. Select EG as your Base Surface and FG as your Comparison Surface. Civil 3D will automatically compute elevation differences across overlapping triangles, generating instant cut, fill, and net earthwork totals.
 
 ---
