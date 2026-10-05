@@ -1,6 +1,6 @@
 ---
 title: "How to Do Cut and Fill Calculations in AutoCAD"
-date: 2026-10-01
+date: 2026-10-06
 category: tech
 description: "A complete step-by-step guide to mastering cut and fill calculations in AutoCAD Civil 3D, earthwork volume dashboard workflows, and site grading precision."
 image: "/images/autocad-cut-fill-v1.jpg"
