@@ -10,7 +10,7 @@ Ever stood on a site plan, coffee in hand, wondering why earthwork volumes never
 
 Calculating site earthwork is far more than just clicking buttons in a software suite, it is about keeping projects profitable, avoiding double costs on dirt hauling, and ensuring you do not overspend on imported fill material.
 
-If you have tried searching online to **learn AutoCAD** workflows for site grading and surface analysis, you have probably noticed that top guides leave massive gaps. Most articles either toss a quick command at you or spend paragraphs describing basic contour lines without demonstrating how to verify raw output accuracy.
+If you have tried searching online to [**learn AutoCAD**](https://howtolearn.site/learn/is-autocad-hard-to-learn-article/) workflows for site grading and surface analysis, you have probably noticed that top guides leave massive gaps. Most articles either toss a quick command at you or spend paragraphs describing basic contour lines without demonstrating how to verify raw output accuracy.
 
 Let us clear up the noise right now like an elder guide who has already walked this ground, stumbled over the pitfalls, and knows exactly where the shortcuts are.
 
