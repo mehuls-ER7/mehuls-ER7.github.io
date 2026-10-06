@@ -3,7 +3,7 @@ title: "How to Learn Drums Without a Drum Set"
 date: 2026-10-01
 category: Music & Art
 description: "A practical guide to building real drumming technique, stick control, and limb coordination at home without a full kit."
-image: "/images/pexels-drum-set-vv1.jpg"
+image: "/images/pexels-drum-set-vv1.webp"
 ---
 
 So, you want to learn how to play the drums, but you don't have a full acoustic kit taking up half your room or a set of noise tolerant neighbors. I get it. The sheer size, volume, and price tag of a drum set keep thousands of aspiring drummers stuck on the sidelines.
