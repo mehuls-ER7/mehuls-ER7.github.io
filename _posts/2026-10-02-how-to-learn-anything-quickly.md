@@ -3,7 +3,7 @@ title: "How to Learn Anything Quickly: The 5-Step Rapid Skill Acquisition System
 date: 2026-10-02
 category: life
 description: "Master how to learn anything quickly with a proven cognitive framework. Stop passive re-reading and learn how to acquire skills in 20 hours or less."
-image: "images/learn-anything-quickly-vv1.webp"
+image: "/images/learn-anything-quickly-vv1.webp"
 ---
 
 Imagine sitting down with a thick textbook, a massive online coding bootcamp, or a dense stack of board exam notes, and knowing with absolute certainty that you can absorb, process, and retain all of it in half the time it takes everyone else.
