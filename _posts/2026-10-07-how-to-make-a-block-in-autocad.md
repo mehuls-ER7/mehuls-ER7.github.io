@@ -16,7 +16,7 @@ Whether your goal is figuring out how to **make a block in AutoCAD** for your cu
 
 ---
 
-> ### Quick Answer / Featured Snippet
+> ### Quick Answer
 > **How do you make a block in AutoCAD?**
 > 1. Draw your geometry in the workspace.
 > 2. Type **`BLOCK`** (or press **`B`**) and hit **Enter**.
