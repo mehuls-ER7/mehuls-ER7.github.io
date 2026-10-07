@@ -2,6 +2,7 @@
 title: "How to Change Units in AutoCAD: The Complete Guide (Zero Scaling Errors)"
 date: 2026-10-08
 category: tech
+image: "/images/how-to-change-units-in-autocad.webp"
 description: "Learn how to change units in AutoCAD step-by-step. Discover how to use UNITS, -DWGUNITS, and DIMSTYLE to scale drawings and blocks without errors."
 tags: ["AutoCAD", "CAD", "Tutorials", "Units", "Design"]
 ---
