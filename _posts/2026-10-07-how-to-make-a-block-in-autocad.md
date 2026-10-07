@@ -6,8 +6,6 @@ description: "Learn how to make a block in AutoCAD step-by-step. Discover best p
 tags: ["AutoCAD", "CAD", "Tutorials", "Drafting", "Design"]
 ---
 
-# How to Make a Block in AutoCAD: The Complete Guide
-
 Ever had one of those long drafting sessions where you are working through a massive floor plan or civil schematic, and you suddenly realize you’ve manually drawn the exact same fixture, door, or symbol thirty times in a row? 
 
 It gets repetitive pretty fast, doesn't it? 
