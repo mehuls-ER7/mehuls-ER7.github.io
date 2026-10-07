@@ -1,7 +1,7 @@
 ---
 title: "How to Make a Block in AutoCAD: The Complete Guide"
-category: tech
 date: 2026-10-08
+category: tech
 description: "Learn how to make a block in AutoCAD step-by-step. Discover best practices for Layer 0, base point setup, WBLOCK exports, and editing tips."
 tags: ["AutoCAD", "CAD", "Tutorials", "Drafting", "Design"]
 ---
