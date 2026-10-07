@@ -1,4 +1,10 @@
-# How to Change Units in AutoCAD: The Complete Guide (Zero Scaling Errors)
+---
+title: "How to Change Units in AutoCAD: The Complete Guide (Zero Scaling Errors)"
+date: 2026-10-08
+category: tech
+description: "Learn how to change units in AutoCAD step-by-step. Discover how to use UNITS, -DWGUNITS, and DIMSTYLE to scale drawings and blocks without errors."
+tags: ["AutoCAD", "CAD", "Tutorials", "Units", "Design"]
+---
 
 Ever opened an architectural drawing, went to measure a standard interior doorway, and realized AutoCAD was telling you it was 900 inches wide instead of 900 millimeters?
 
