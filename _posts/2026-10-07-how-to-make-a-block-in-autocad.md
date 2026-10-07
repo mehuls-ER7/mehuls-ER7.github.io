@@ -1,7 +1,7 @@
 ---
 title: "How to Make a Block in AutoCAD: The Complete Guide"
-category: "Tech"
-date: "2026-10-08"
+category: tech
+date: 2026-10-08
 description: "Learn how to make a block in AutoCAD step-by-step. Discover best practices for Layer 0, base point setup, WBLOCK exports, and editing tips."
 tags: ["AutoCAD", "CAD", "Tutorials", "Drafting", "Design"]
 ---
@@ -12,7 +12,7 @@ Ever had one of those long drafting sessions where you are working through a mas
 
 It gets repetitive pretty fast, doesn't it? 
 
-When learning the ropes—especially if you've recently pondered [how hard AutoCAD is to learn](https://howtolearn.site/learn/is-autocad-hard-to-learn-article/)—discovering blocks is usually the exact moment where drafting transforms from tedious line work into a smooth, efficient workflow. 
+When learning the ropes especially if you've recently pondered [how hard AutoCAD is to learn](https://howtolearn.site/learn/is-autocad-hard-to-learn-article/), discovering blocks is usually the exact moment where drafting transforms from tedious line work into a smooth, efficient workflow. 
 
 Whether your goal is figuring out how to **make a block in AutoCAD** for your current drawing layout or understanding how to **make a block on AutoCAD** to save into an external library for long-term projects, this guide breaks down every step in a clear, practical way.
 
@@ -90,7 +90,7 @@ Click **OK**. Your selected shapes are now combined into a single, structured **
 
 ## Exporting Blocks for Future Projects (`WBLOCK`)
 
-When you create a symbol you plan to reuse across multiple drawings—like standard structural callouts or site components used during a [cut and fill calculation in AutoCAD](https://howtolearn.site/learn/cut-and-fill-autocad-guide/)—saving it externally is the way to go:
+When you create a symbol you plan to reuse across multiple drawings—like standard structural callouts or site components used during a [cut and fill calculation in AutoCAD](https://howtolearn.site/learn/cut-and-fill-autocad-guide/), saving it externally is the way to go:
 
 1. Type **`WBLOCK`** (or **`W`**) and press **Enter**.
 2. Select **Block** to choose an existing internal definition, or select **Objects** to export workspace shapes directly.
