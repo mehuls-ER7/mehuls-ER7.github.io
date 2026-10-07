@@ -18,7 +18,7 @@ Whether your goal is to learn **how to change the measurement units in AutoCAD**
 
 ---
 
-> ### Featured Snippet / Quick Answer
+> ### Quick Answer
 > 
 > **How do you change units in AutoCAD?**
 > 1. Type **`UNITS`** (or **`UN`**) in the command line and press **Enter**.
