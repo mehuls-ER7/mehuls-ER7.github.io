@@ -25,7 +25,7 @@ Here's the idea that makes everything click. A block has two parts:
 When you press Delete, you only remove references. The definition stays behind in the drawing's database, quietly adding to your file size, until you purge it. And AutoCAD won't let you purge a definition while any reference to it still exists. So the order always matters: **erase first, purge second.**
 
 <!-- IMAGE 1: place here. Source file: delete-step1-erase-vs-purge.png -->
-![Difference between erasing block references and purging the block definition in AutoCAD](/images/delete-step1-erase-vs-purge.png)
+![Difference between erasing block references and purging the block definition in AutoCAD](/images/delete-step1-erase-vs-purge1.webp)
 
 ## Method 1: Erase a Single Block (or a Few)
 
@@ -42,7 +42,7 @@ Say your drawing has 200 copies of `DOOR_36` and you want them all gone. Clickin
 5. **Press Delete.**
 
 <!-- IMAGE 2: place here. Source file: delete-step2-quick-select.png -->
-![Using Quick Select to delete all copies of a block in AutoCAD](/images/delete-step2-quick-select.png)
+![Using Quick Select to delete all copies of a block in AutoCAD](/images/delete-step2-quick-select2.webp)
 
 One catch: objects on frozen layers aren't selected, and objects on locked layers can't be erased. If some copies survive, thaw and unlock your layers and run it again.
 
@@ -58,7 +58,7 @@ Now the real cleanup. This is the part that answers how to delete blocks in Auto
 6. Click **Close**.
 
 <!-- IMAGE 3: place here. Source file: delete-step3-purge-dialog.png -->
-![AutoCAD Purge dialog with Blocks and Purge nested items selected](/images/delete-step3-purge-dialog.png)
+![AutoCAD Purge dialog with Blocks and Purge nested items selected](/images/delete-step3-purge-dialog3.webp)
 
 The block is now actually gone from the file. Save the drawing and you'll often see the size drop.
 
