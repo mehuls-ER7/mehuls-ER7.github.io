@@ -28,7 +28,7 @@ This is the method to learn. It's the one to use to rename a block in AutoCAD qu
 1. **Type `REN`** in the command line and press Enter. It's a keyboard command with no ribbon button, which is exactly why people can't find it.
 
 <!-- IMAGE 1: place here. Source file: step1-type-ren.png -->
-![Typing REN in the AutoCAD command line to rename a block](/images/step1-type-ren.png)
+![Typing REN in the AutoCAD command line to rename a block](/images/step1-type-ren1.webp)
 
 2. **Click "Blocks"** in the Named Objects list on the left. (The same dialog renames layers, text styles, linetypes, views and more, so check you've picked Blocks.)
 3. **Select your block** in the Items list. Tip: type the first letter of the name and the list jumps straight to it.
@@ -37,7 +37,7 @@ This is the method to learn. It's the one to use to rename a block in AutoCAD qu
 6. **Click OK.**
 
 <!-- IMAGE 2: place here. Source file: step2-rename-dialog.png -->
-![AutoCAD Rename dialog showing how to rename a block step by step](/images/step2-rename-dialog.png)
+![AutoCAD Rename dialog showing how to rename a block step by step](/images/step2-rename-dialog2.webp)
 
 If you need to rename several blocks in one session, click **Rename To** after each one and press OK only at the end.
 
@@ -48,7 +48,7 @@ Okay, this is where it gets fun. Say a supplier's drawing has fifty blocks all s
 In the Rename dialog, pick Blocks, then in **Old Name** type `OLD_*` and in **Rename To** type `NEW_*`. Click **Rename To**, then OK. Every block matching the pattern gets renamed in one go, so `OLD_DOOR` becomes `NEW_DOOR`, and so on.
 
 <!-- IMAGE 3: place here. Source file: step3-wildcard.png -->
-![Renaming multiple blocks in AutoCAD at once using a wildcard](/images/step3-wildcard.png)
+![Renaming multiple blocks in AutoCAD at once using a wildcard](/images/step3-wildcard3.webp)
 
 Wildcards are a feature of the dialog, so if you're on AutoCAD for Mac and the behavior differs, check your version's help. Check the result in the list before you close the box.
 
