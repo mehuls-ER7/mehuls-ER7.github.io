@@ -3,7 +3,7 @@ title: "How to Rename a Block in AutoCAD"
 date: 2026-10-10
 category: tech
 description: "Learn how to rename a block in AutoCAD with the RENAME command, wildcards, and -RENAME, plus quick fixes when a block won't rename."
-image: "/images/rename-block-autocad.webp"
+image: "/images/rename-block-autocad1.webp"
 ---
 
 You've dropped a block into your drawing, and the name is wrong. Maybe it's `Block1`, maybe it's `DOOR_FINAL_v7_REAL`, maybe a client sent a file where every chair has a cryptic name. You click the block, look for a name field, and find nothing you can edit. I've watched plenty of people get stuck right here.
