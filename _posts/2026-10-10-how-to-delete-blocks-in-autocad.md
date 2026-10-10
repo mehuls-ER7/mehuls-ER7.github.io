@@ -3,7 +3,7 @@ title: "How to Delete Blocks in AutoCAD"
 date: 2026-10-10
 category: tech
 description: "Learn how to delete blocks in AutoCAD the right way: erase every copy, then PURGE the definition. Plus fixes for blocks that won't go away."
-image: "/images/delete-blocks-autocad.webp"
+image: "/images/delete-blocks-autocad1.webp"
 ---
 
 You selected the block. You pressed Delete. It vanished from the screen, and you felt great for about four seconds. Then you opened the block list and there it was again, sitting there like nothing happened, and your file size hasn't budged.
