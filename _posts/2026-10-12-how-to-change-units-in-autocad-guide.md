@@ -22,7 +22,7 @@ Here's the thing nobody tells beginners: AutoCAD doesn't really care whether "1"
 The problem starts when a drawing's units, a block's units and your dimension style all disagree about that promise. That's why there isn't one single answer to how to change units in AutoCAD. There are three settings, and each one does a different job.
 
 <!-- IMAGE 1: place here. Source file: units-step1-three-unit-types.png -->
-![The three unit settings in AutoCAD: UNITS, -DWGUNITS and DIMSTYLE](/images/units-step1-three-unit-types.png)
+![The three unit settings in AutoCAD: UNITS, -DWGUNITS and DIMSTYLE](/images/units-step1-three-unit-types.webp)
 
 - **`UNITS`:** sets how lengths and angles are displayed, and the insertion units used when you bring in blocks and Xrefs. It does **not** resize what's already drawn.
 - **`-DWGUNITS`:** changes the drawing's units and can rescale everything already in the drawing.
@@ -42,7 +42,7 @@ Use this when you're starting a new drawing or want incoming blocks to scale cor
 6. Click **OK**.
 
 <!-- IMAGE 2: place here. Source file: units-step2-units-dialog.png -->
-![AutoCAD Drawing Units dialog showing how to change units](/images/units-step2-units-dialog.png)
+![AutoCAD Drawing Units dialog showing how to change units](/images/units-step2-units-dialog.webp)
 
 What step 4 really does: if your drawing is in inches and you insert a block defined in millimeters, AutoCAD scales the block down so it fits, by a factor of about **0.03937** (that's 1 divided by 25.4). A block going the other way gets scaled up by 25.4.
 
@@ -65,7 +65,7 @@ Autodesk's own support page lists this as the preferred method for converting dr
 7. **Include objects in Paper Space?** This one depends on your layouts. If they still hold content in the old units, say Yes. Then open a layout tab and check it. If your title block got scaled by mistake, press `UNDO` and run the command again with No.
 
 <!-- IMAGE 3: place here. Source file: units-step3-dwgunits-prompts.png -->
-![The -DWGUNITS command prompts in AutoCAD with the key scaling prompt highlighted](/images/units-step3-dwgunits-prompts.png)
+![The -DWGUNITS command prompts in AutoCAD with the key scaling prompt highlighted](/images/units-step3-dwgunits-prompts.webp)
 
 If your drawing seems to vanish afterwards, don't panic. Type `Z`, Enter, `E`, Enter (Zoom Extents) and it'll reappear.
 
@@ -85,7 +85,7 @@ Sometimes you want full control, or `-DWGUNITS` isn't an option. Autodesk lists 
 5. Enter the factor from the table below.
 
 <!-- IMAGE 4: place here. Source file: units-step4-scale-factors.png -->
-![Scale factors for converting units in AutoCAD with the SCALE command](/images/units-step4-scale-factors.png)
+![Scale factors for converting units in AutoCAD with the SCALE command](/images/units-step4-scale-factors.webp)
 
 In short: inches to millimeters is **25.4**, millimeters to inches is **0.03937**, feet to meters is **0.3048**, and meters to millimeters is **1000**.
 
