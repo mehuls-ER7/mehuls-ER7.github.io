@@ -3,7 +3,7 @@ title: "How to Change Units in AutoCAD"
 date: 2026-10-10
 category: tech
 description: "Learn how to change units in AutoCAD with UNITS, -DWGUNITS and DIMSTYLE, plus scale factors and fixes for drawings that didn't resize."
-image: "/images/change-units-autocad1.webp"
+image: "/images/change-units-autocadv2.webp"
 ---
 
 You open a drawing, measure a standard doorway, and AutoCAD tells you it's 900 inches wide. Or maybe it's the other way round: you drop a manufacturer's block into your floor plan and it explodes to the size of a city block. I've seen this happen to students, site engineers and even seasoned drafters, and every single time the first reaction is the same: "What did I break?"
