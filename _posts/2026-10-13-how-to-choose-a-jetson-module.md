@@ -67,7 +67,7 @@ Memory **bandwidth** matters too. Here is where each family sits:
 For workloads that are limited by memory bandwidth rather than raw compute (which includes much of LLM text generation), bandwidth is a better guide than headline TOPS.
 
 <!-- IMAGE 1: place here. Source file: jetson-step1-module-ladder.png -->
-![Jetson module comparison by memory, bandwidth and power for Orin Nano, Orin NX, AGX Orin and Thor](/images/jetson-step1-module-ladder.png)
+![Jetson module comparison by memory, bandwidth and power for Orin Nano, Orin NX, AGX Orin and Thor](/images/jetson-step1-module-ladder.webp)
 
 ## Step 2: Read the TOPS Numbers Carefully
 
@@ -159,7 +159,7 @@ My rule: if you need to ship or learn now, buy what's available and keep your co
 ## Quick Picks by Project
 
 <!-- IMAGE 2: place here. Source file: jetson-step2-decision-flow.png -->
-![Decision flowchart for choosing between Orin Nano, Orin NX, AGX Orin and Thor Jetson modules](/images/jetson-step2-decision-flow.png)
+![Decision flowchart for choosing between Orin Nano, Orin NX, AGX Orin and Thor Jetson modules](/images/jetson-step2-decision-flow.webp)
 
 | Your project | Start with |
 | --- | --- |
@@ -184,7 +184,7 @@ Here are the ones I see most.
 7. **Not benchmarking.** Test your own model on a dev kit before you order production modules.
 
 <!-- YOUTUBE: replace this link with your verified video before publishing -->
-For more guidance, you can watch this video: [How to choose a Jetson module video](https://www.youtube.com/watch?v=REPLACE_WITH_VIDEO_ID).
+For more guidance, you can watch this video: [How to choose a Jetson module video](https://youtu.be/5QrnXbvsbUc?si=vhR0viZQQuu0I1iQ).
 
 ## Frequently Asked Questions
 
