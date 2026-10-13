@@ -16,7 +16,7 @@ description: Contact How to Learn for questions, corrections, topic requests or 
   <li>Collaboration or business enquiries</li>
 </ul>
 
-<p><strong>Email:</strong> <a href="mailto:contact@howtolearn.site">YOUR_GMAIL@gmail.com</a></p>
+<p><strong>Email:</strong> <a href="mailto:contact@howtolearn.site">contact@howtolearn.site</a></p>
 
 <p>I usually reply within 2 to 3 working days.</p>
 
