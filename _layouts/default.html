@@ -50,10 +50,14 @@
   <div class="wrap foot">
     <span>© <span id="year"></span> How to Learn · howtolearn.site</span>
     <ul>
-      <li><a href="#">Privacy</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">YouTube</a></li>
+      <ul>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+        <li><a href="{{ '/privacy-policy/' | relative_url }}">Privacy Policy</a></li>
+        <li><a href="{{ '/terms/' | relative_url }}">Terms</a></li>
+        <li><a href="{{ '/disclaimer/' | relative_url }}">Disclaimer</a></li>
+        <li><a href="{{ '/editorial-policy/' | relative_url }}">Editorial Policy</a></li>
+      </ul>
     </ul>
   </div>
 </footer>
