@@ -125,6 +125,34 @@ nav a:hover { border-bottom-color: var(--highlight); }
 .prose th, .prose td { border: 1px solid var(--line); padding: 8px 12px; text-align: left; }
 .related { margin-top: 56px; }
 
+/* Back to top */
+.to-top {
+  position: fixed;
+  right: 18px;
+  bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: var(--highlight);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 4px 4px 0 var(--ink);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity .2s, transform .2s, visibility .2s, box-shadow .15s;
+  z-index: 20;
+}
+.to-top.show { opacity: 1; visibility: visible; transform: none; }
+.to-top:hover { background: #ffcb1f; transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
+.to-top:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--ink); }
+@media (prefers-reduced-motion: reduce) {
+  .to-top { transition: none; }
+}
+
 /* Newsletter */
 .news { margin: 70px 0; background: var(--ink); color: #fff; border-radius: 24px; padding: 48px 34px; text-align: center; }
 .news h2 { font: 800 clamp(1.7rem, 4vw, 2.4rem) var(--display); letter-spacing: -0.02em; }
@@ -144,7 +172,9 @@ footer { border-top: 2px solid var(--ink); background: var(--paper); padding: 32
 @media (max-width: 900px) {
   .grid, .cat-grid { grid-template-columns: repeat(2, 1fr); }
   .featured { grid-template-columns: 1fr; }
-  nav { display: none; }
+  .nav { flex-wrap: wrap; }
+    nav { order: 3; width: 100%; }
+    nav ul { gap: 16px; flex-wrap: wrap; font-size: .92rem; }
 }
 @media (max-width: 580px) {
   .grid, .cat-grid { grid-template-columns: 1fr; }
