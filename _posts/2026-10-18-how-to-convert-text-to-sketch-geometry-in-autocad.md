@@ -3,7 +3,7 @@ title: "How to Convert Text to Sketch Geometry in AutoCAD"
 date: 2026-10-18
 category: tech
 description: "Learn how to convert text to sketch geometry in AutoCAD with TXTEXP, WMFOUT/WMFIN or the PDF route, plus fixes for LT, curves and CNC."
-image: "/images/convert-text-to-sketch-geometry-autocad1.webp"
+image: "/images/convert-text-to-sketch-geometry-autocad-2.webp"
 ---
 
 You typed a name, a logo or a part number into your drawing. It looks perfect on screen. Then you send it to the laser cutter, or try to extrude it, and nothing happens. The machine ignores it, or the software complains that there's no usable geometry.
