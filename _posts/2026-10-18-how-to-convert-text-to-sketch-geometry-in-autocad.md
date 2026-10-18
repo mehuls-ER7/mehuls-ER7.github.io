@@ -3,7 +3,7 @@ title: "How to Convert Text to Sketch Geometry in AutoCAD"
 date: 2026-10-18
 category: tech
 description: "Learn how to convert text to sketch geometry in AutoCAD with TXTEXP, WMFOUT/WMFIN or the PDF route, plus fixes for LT, curves and CNC."
-image: "/images/convert-text-to-sketch-geometry-autocad.webp"
+image: "/images/convert-text-to-sketch-geometry-autocad1.webp"
 ---
 
 You typed a name, a logo or a part number into your drawing. It looks perfect on screen. Then you send it to the laser cutter, or try to extrude it, and nothing happens. The machine ignores it, or the software complains that there's no usable geometry.
@@ -29,7 +29,7 @@ So when you convert text to sketch geometry in AutoCAD, the real goal is to turn
 If you're heading into Fusion or Inventor, there's a section for you near the end.
 
 <!-- IMAGE 1: place here. Source file: text-to-geometry-step3-before-after.png -->
-![Text object versus polyline outlines when you convert text to geometry in AutoCAD](/images/text-to-geometry-step3-before-after.png)
+![Text object versus polyline outlines when you convert text to geometry in AutoCAD](/images/text-to-geometry-step3-before-after.webp)
 
 ## Before You Start: Four Quick Checks
 
@@ -41,7 +41,7 @@ A thirty-second check saves an hour of frustration.
 4. **What's the goal?** A quick sign needs less accuracy than a CNC job where smooth curves matter.
 
 <!-- IMAGE 2: place here. Source file: text-to-geometry-step1-which-method.png -->
-![Choosing a method to convert text to geometry in AutoCAD depending on your version and goal](/images/text-to-geometry-step1-which-method.png)
+![Choosing a method to convert text to geometry in AutoCAD depending on your version and goal](/images/text-to-geometry-step1-which-method.webp)
 
 ## Method 1: TXTEXP (The Quickest Way in Full AutoCAD)
 
@@ -81,7 +81,7 @@ This is the method I'd reach for when curves matter. Several users on the Autode
 5. **Erase the hatch**, keeping the new boundary polylines.
 
 <!-- IMAGE 3: place here. Source file: text-to-geometry-step2-pdf-route.png -->
-![The PDF route in AutoCAD to turn text into polylines using Recreate Boundary](/images/text-to-geometry-step2-pdf-route.png)
+![The PDF route in AutoCAD to turn text into polylines using Recreate Boundary](/images/text-to-geometry-step2-pdf-route.webp)
 
 It takes a few more clicks, but the result is the closest thing to a true outline. Dialog names can differ a little between AutoCAD versions, so look for the equivalent options in your PDF Options and import windows.
 
@@ -135,7 +135,7 @@ Let's go through the usual suspects.
 - **Test on one word first.** Check the result before you convert 1,200 tags.
 
 <!-- YOUTUBE: replace this link with your verified video before publishing -->
-For more guidance, you can watch this video: [How to convert text to geometry in AutoCAD video](https://www.youtube.com/watch?v=REPLACE_WITH_VIDEO_ID).
+For more guidance, you can watch this video: [How to convert text to geometry in AutoCAD video](https://youtu.be/Cny2cChZFms?si=oaOFHOhiwKnGN8zQ).
 
 ## Frequently Asked Questions
 
