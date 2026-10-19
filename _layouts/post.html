@@ -2,6 +2,26 @@
 layout: default
 ---
 {%- assign cat = site.data.categories | where: "slug", page.category | first -%}
+{%- if page.faq %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for item in page.faq %}
+    {
+      "@type": "Question",
+      "name": {{ item.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.a | jsonify }}
+      }
+    }{%- unless forloop.last %},{%- endunless %}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endif %}
 <article class="wrap article">
   <a class="back" href="{{ '/topics/' | relative_url }}#{{ page.category }}">← {{ cat.name | default: "All topics" }}</a>
   <h1>{{ page.title }}</h1>
