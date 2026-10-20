@@ -34,6 +34,13 @@ layout: default
   {%- endif %}
   <div class="prose">
     {{ content }}
+    {%- if page.faq %}
+    <h2 id="faq">Frequently Asked Questions</h2>
+    {%- for item in page.faq %}
+    <h3>{{ item.q | escape }}</h3>
+    <p>{{ item.a | escape }}</p>
+    {%- endfor %}
+    {%- endif %}
   </div>
 </article>
 
