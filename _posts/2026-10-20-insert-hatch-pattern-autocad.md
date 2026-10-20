@@ -157,4 +157,4 @@ Autodesk's support article lists the usual causes: the pattern was never properl
 As of October 2026, Autodesk's help for AutoCAD 2026 still describes the same Hatch Creation workflow covered here, so these steps apply to current releases. If you want the official reference for every option on the tab, see Autodesk's [Hatch Creation ribbon documentation](https://help.autodesk.com/cloudhelp/2026/ENU/AutoCAD-LT/files/GUID-CF9C88AB-CD49-44A4-8A85-C26F60B828DA.htm). For custom patterns, Autodesk Support has a page on [installing custom hatch patterns in AutoCAD](https://autodesk.com/support/technical/article/How-to-install-custom-hatch-patterns-in-AutoCAD).
 
 <!-- YOUTUBE: replace this link with your verified video before publishing -->
-For more guidance, you can watch this video: [How to add a hatch pattern in AutoCAD](https://www.youtube.com/watch?v=REPLACE_WITH_VIDEO_ID).
+For more guidance, you can watch this video: [How to add a hatch pattern in AutoCAD](https://www.youtube.com/watch?v=132xQ05-188).
