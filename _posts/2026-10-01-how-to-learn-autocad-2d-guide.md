@@ -83,9 +83,9 @@ Very little, which is part of the appeal. You need a legal copy of the software:
 
 ## AutoCAD LT or full AutoCAD for learning 2D?
 
-For pure 2D learning, AutoCAD LT is enough, and it costs less. Everything in the plan below, drawing, layers, dimensions, blocks, layouts and plotting, works in LT exactly as it does in the full version, so your first 100 hours feel identical in either one. What LT leaves out only matters later: 3D modelling, automation with AutoLISP, and the specialised toolsets for fields like architecture and mechanical design. Plenty of offices draft in LT for years and never miss those extras.
+For pure 2D learning, AutoCAD LT is enough, and it costs less. Everything in the plan below, drawing, layers, dimensions, blocks, layouts and plotting, works in LT exactly as it does in the full version, so your first 100 hours feel identical in either one. What LT leaves out only matters later: 3D modelling and the specialized toolsets for fields like architecture and mechanical design. Plenty of offices draft in LT for years and never miss those extras.
 
-Choose full AutoCAD instead if your employer or clients already use it, if you plan to move into 3D after 2D, or if automation genuinely interests you. And if you qualify for the free education licence, the question answers itself, because that licence gives you the full version. Either way, do not let the decision delay your start: skills transfer between the two without any relearning.
+Choose full AutoCAD instead if your employer or clients already use it, if you plan to move into 3D after 2D, or if you need the industry toolsets. And if you qualify for the free education license , the question answers itself, because that license gives you the full version. Either way, do not let the decision delay your start: skills transfer between the two without any relearning.
 
 ## The 4-week plan that reaches the comfortable stage
 
