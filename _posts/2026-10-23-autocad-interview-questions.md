@@ -3,7 +3,7 @@ title: "AutoCAD Interview Questions: 40 Questions and Answers for Freshers and E
 date: 2026-10-23
 category: tech
 description: "AutoCAD interview questions with answers: 40 questions on commands, layers, blocks, layouts and the drawing test, for freshers and experienced candidates."
-image: "/images/autocad-interview-questions-cover.webp"
+image: "/images/interview-questions-cover.webp"
 faq:
   - q: "What are the most common AutoCAD interview questions?"
     a: "The same core topics appear in almost every interview: model space versus paper space, blocks versus xrefs, window versus crossing selection, layers and their states, and how you set a viewport scale. The 40 questions in this article are grouped around exactly those topics, with answers you can say out loud."
@@ -177,7 +177,7 @@ Work in a layout: set the page to the real paper size at 1:1, place the title bl
 A title block with the project, drawing title, number, scale, date and revision; the viewports at their locked scales; notes and a legend where needed; and consistent text that comes from annotative styles or the layout itself. Interviewers ask this to hear whether you think about the sheet the client sees, not just the model behind it.
 
 <!-- IMAGE 3: place here. Source file: autocad-interview-questions-step-3.webp (675 x 481) -->
-![Diagram of model space and paper space with a viewport, for AutoCAD interview questions revision](/images/autocad-interview-questions-step-3.webp)
+![Diagram of model space and paper space with a viewport, for AutoCAD interview questions revision](/images/model-space-vs-paper-space-diagram.webp)
 
 ## Experienced and problem-solving questions
 
